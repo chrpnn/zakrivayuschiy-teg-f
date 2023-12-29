@@ -1,0 +1,47 @@
+/* В этом файле вы опишете значения переменных в разных цветовых схемах.
+Придерживайтесь такого именования классов:
+✦ theme-dark — класс тёмной темы
+✦ theme-light — класс светлой темы
+✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
+*/
+
+:root.theme-dark {
+  --card-font-weight: 465;
+  --title-font-weight: 785;
+  --background-color: #000;
+  --accent-color: #00cc14;
+  --button-text-color: var(--accent-color);
+  --gradient-top-color: #007f0c;
+  --gradient-bottom-color: #1a1a1a;
+  --gradient-line-color: #000;
+  --icon-save-color: var(--accent-color);
+  --label-stroke-color: #000;
+}
+
+:root.theme-light {
+  --card-font-weight: 400;
+  --title-font-weight: 700;
+  --background-color: #fff;
+  --accent-color: #000;
+  --button-text-color: var(--background-color);
+  --gradient-top-color: #e7e7e7;
+  --gradient-bottom-color: #1a1a1a;
+  --gradient-line-color: #d3d3d3;
+  --icon-save-color: var(--background-color);
+  --label-stroke-color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --card-font-weight: 465;
+    --title-font-weight: 785;
+    --background-color: #000;
+    --accent-color: #00cc14;
+    --button-text-color: var(--accent-color);
+    --gradient-top-color: #007f0c;
+    --gradient-bottom-color: #1a1a1a;
+    --gradient-line-color: #000;
+    --icon-save-color: var(--accent-color);
+    --label-stroke-color: #000;
+  }
+}

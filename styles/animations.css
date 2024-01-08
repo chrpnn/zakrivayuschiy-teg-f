@@ -13,6 +13,16 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
+.like-icon.is-liked .heart {
+    animation: heartScale 0.3s ease-in 0.1s alternate;
+    transform-origin: center;
+}
+
+.like-icon.is-liked .sparks {
+    animation: sparkle 0.3s ease-in 0.3s alternate;
+    transform-origin: center;
+}
+
 @keyframes arrow {
     0% {
         transform: translateX(0);

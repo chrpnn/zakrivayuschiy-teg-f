@@ -1,13 +1,13 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-  --main-font: "Inter";
-  --accent-font: "Press Start 2P";
+  --main-font: "Inter", Arial, sans-serif;
+  --accent-font: "Press Start 2P", Fantasy, Impact;
   --card-font-weight: 465;
   --title-font-weight: 785;
   --background-color: #000;
   --accent-color: #00cc14;
-  --button-text-color: #000;
+  --button-text-color: var(--accent-color);
   --heart-contour-color: var(--accent-color);
   --sparks-color: #f00;
   --heart-fill-color: #f00;

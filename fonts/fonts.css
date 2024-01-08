@@ -10,12 +10,11 @@
 }
 
 @font-face {
-    font-family: "Inter";
-    src: 
-        local("Inter-Variable"),
-        url(./Inter-Variable.woff2)
-        format("woff2 supports variations");
-    font-weight: 400 785; /* Указание диапазона веса */
-    font-stretch: 25% 150%; /* Указание диапазона ширины */
+    font-family: "Inter";    
+    src:
+        local("Inter"),
+        url(./Inter-Variable.woff2) format("woff2 supports variations"),
+        url(./Inter-Variable.woff2) format("woff2-variations");
+    font-display: swap;
+    font-weight: 400 785;
 }
-

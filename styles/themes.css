@@ -16,6 +16,7 @@
   --gradient-line-color: #000;
   --icon-save-color: var(--accent-color);
   --label-stroke-color: #000;
+  --dialog-button-text-color: var(--accent-color);
 }
 
 :root.theme-light {
@@ -29,6 +30,7 @@
   --gradient-line-color: #d3d3d3;
   --icon-save-color: var(--background-color);
   --label-stroke-color: #fff;
+  --dialog-button-text-color: var(--background-color);
 }
 
 @media (prefers-color-scheme: light) {
@@ -43,5 +45,6 @@
     --gradient-line-color: #d3d3d3;
     --icon-save-color: var(--background-color);
     --label-stroke-color: #fff;
+    --dialog-button-text-color: var(--background-color);
   }
 }

@@ -36,8 +36,7 @@
     );
 
   font-family: var(--main-font);
-  font-variation-settings: "wght" var(--card-font-weight),
-    "slnt" normal;
+  font-variation-settings: "wght" var(--card-font-weight), "slnt" normal;
   color: var(--accent-color);
   background-attachment: fixed;
 }
@@ -265,7 +264,6 @@
   border: 2px solid var(--accent-color);
   cursor: pointer;
   transition: box-shadow 0.5s ease-in-out;
-  
 }
 
 .button:focus {
@@ -280,7 +278,6 @@
   position: relative;
   width: 130px;
   height: 38px;
-  /* padding: 9px 17px; */
   outline: none;
 }
 
@@ -308,7 +305,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 90%;
-  mix-blend-mode: difference;  
+  mix-blend-mode: difference;
 }
 
 .footer {
@@ -332,22 +329,17 @@
 }
 
 .icon-save {
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   mix-blend-mode: difference;
-  fill: var(--accent-color);
-}
-
-/* убрать */
-.svg-display {
-  display: none;
 }
 
 dialog[open] {
-  padding: 30px 40px;
+  padding: 30px;
+  padding-inline: clamp(2.5rem, -0.939vw + 2.72rem, 1.875rem);
   border: 2px solid var(--accent-color);
   background-color: var(--background-color);
-  max-width: 357px;
+  width: clamp(21.313rem, 1.502vw + 20.96rem, 22.313rem);
 }
 
 dialog[open]::backdrop {
@@ -364,7 +356,7 @@ dialog[open] form {
 
 .dialog__section {
   display: grid;
-  grid-template-columns: auto 198px;
+  grid-template-columns: auto clamp(12.375rem, 3.38vw + 11.583rem, 14.625rem);
   gap: 20px;
   align-items: center;
 }
@@ -383,7 +375,7 @@ dialog[open] form {
   position: relative;
   background-color: transparent;
   border: 2px solid var(--accent-color);
-  width: 293px;
+  width: clamp(16.063rem, 3.38vw + 15.27rem, 18.313rem);
   height: 38px;
   display: flex;
   justify-content: center;
@@ -392,7 +384,7 @@ dialog[open] form {
 }
 
 .dialog__button-text {
-  color: var(--accent-color);
+  color: var(--dialog-button-text-color);
   font-family: var(--accent-font);
   font-size: 14px;
   font-style: normal;
@@ -473,15 +465,14 @@ dialog[open] form {
   .footer__save-button {
     flex-direction: row;
     justify-content: center;
-    height: 57px;
+    height: 55px;
     width: 339px;
     padding-block: 0;
     padding-inline: 0px;
   }
 
   .icon-save {
-    height: 24px;
-    width: 24px;
+    height: 21px;
+    width: 21px;
   }
-
 }

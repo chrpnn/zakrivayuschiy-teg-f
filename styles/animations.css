@@ -13,39 +13,95 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
+.sparks {
+  opacity: 0;
+}
+
+.like-icon .main-body {
+  transition: fill 0.3s linear;
+  fill: transparent;
+}
+
+.like-icon .core {
+  transition: fill 0.3s linear 0.03s;
+  fill: transparent;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--heart-contour-color);
+  transition: fill 0.3s;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--heart-contour-color);
+  transition: fill 0.3s 0.05s;
+}
+
+.card__icon-button:active .main-body {
+  fill: var(--heart-fill-color);
+  transition: fill 0.3s 0.05s;
+}
+
+.card__icon-button:active .core {
+  fill: var(--heart-fill-color);
+  transition: fill 0.3s;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--heart-fill-color);
+  transition: fill 0.3s 0.05s;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--heart-fill-color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--heart-fill-color);
+  transition: fill 0.3s linear 0.06s;
+}
+
+.like-icon .contour {
+  fill: var(--heart-contour-color);
+  transition: fill 0.1s linear;
+}
+
 .like-icon.is-liked .heart {
-    animation: heartScale 0.3s ease-in 0.1s alternate;
-    transform-origin: center;
+  animation: heartScale 0.3s ease-in 0.1s alternate;
+  transform-origin: center;
 }
 
 .like-icon.is-liked .sparks {
-    animation: sparkle 0.3s ease-in 0.3s alternate;
-    transform-origin: center;
+  animation: sparkle 0.3s ease-in 0.3s alternate;
+  transform-origin: center;
 }
 
 @keyframes arrow {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(4px);
-    }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(4px);
+  }
 }
 
 @keyframes heartScale {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.5);
-    }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
 }
 
 @keyframes sparkle {
-    0%, 100% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }

@@ -399,68 +399,6 @@ dialog[open] form {
   height: 40px;
 }
 
-.sparks {
-  opacity: 0;
-}
-
-/* анимация для :hover */
-
-.like-icon .main-body {
-  transition: fill 0.3s linear;
-  fill: transparent;
-}
-
-.like-icon .core {
-  transition: fill 0.3s linear 0.03s;
-  fill: transparent;
-}
-
-.like-icon:hover .core {
-  fill: var(--heart-contour-color);
-  transition-delay: 0s;
-}
-
-.like-icon:hover .main-body {
-  fill: var(--heart-contour-color);
-  transition-delay: 0.05s;
-}
-
-/* анимация для :active */
-
-.like-icon:active .main-body {
-  fill: var(--heart-color);
-  transition-delay: 0.05s;
-}
-
-.like-icon:active .core {
-  fill: var(--heart-color);
-  transition-delay: 0s;
-}
-
-/* анимация при клике */
-
-.like-icon.is-liked .main-body {
-  fill: var(--heart-fill-color);
-  transition: fill 0.3s linear;
-}
-
-.like-icon.is-liked .core {
-  fill: var(--heart-fill-color);
-  transition: fill 0.3s linear;
-}
-
-.like-icon.is-liked .contour {
-  fill: var(--heart-fill-color);
-  transition: fill 0.3s linear 0.06s;
-}
-
-/* перекрашивание контура обратно */
-
-.like-icon .contour {
-  fill: var(--heart-contour-color);
-  transition: fill 0.1s linear;
-}
-
 @media (width >= 376px) {
   .footer__save-button {
     flex-direction: row;
